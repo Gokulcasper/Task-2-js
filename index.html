@@ -34,57 +34,86 @@
           alt=""
           width="400px"
           height="200px"
-          />
-          <div class="valueContainer">
-            <div class="addingNumbers">
-                <span id="firstNumber" class="first-number">12</span>
-                <p>+</p>
-                <span id="secondNumber" class="second-number">27</span>
-                <p>=</p>
-                <input type="text" name="number" id="userInput" class="user-Input">
-            </div>
-            <div class="buttonContainer">
-                <button onclick="checkButton()">Check</button>
-                <button onclick="restartButton()">Restart</button>
-            </div>
-            <p class="game-result" id="gameResult"></p>
+        />
+        <div class="valueContainer">
+          <div class="addingNumbers">
+            <span id="firstNumber" class="first-number">12</span>
+            <p>+</p>
+            <span id="secondNumber" class="second-number">27</span>
+            <p>=</p>
+            <input
+              type="text"
+              name="number"
+              id="userInput"
+              class="user-Input"
+            />
           </div>
+          <div class="buttonContainer">
+            <button onclick="checkButton()">Check</button>
+            <button onclick="restartButton()">Restart</button>
+          </div>
+          <p class="game-result" id="gameResult"></p>
+        </div>
       </div>
 
-      <hr>
+      <hr />
 
-<!-- Change Color       -->
-<div class="changeColorContainer">
-    <h1>Click the below button to change color</h1>
-<button id="button">Click Me</button>
-<div class="colorContainer" id="bgContainer">
+      <!-- Change Color       -->
+      <div class="changeColorContainer">
+        <h1>Click the below button to change color</h1>
+        <button id="buttonChangeColor" onclick="buttonChangeColor()">
+          Click Me
+        </button>
+        <div class="colorContainer" id="bgContainer"></div>
+      </div>
 
-</div>
-</div>
+      <hr />
 
-<hr>
+      <!-- Button Maker -->
 
-<!-- Button Maker -->
+      <div class="buttonMakerContainer">
+        <h1>Button Maker</h1>
+        <div class="buttonItemContainer">
+          <label for="">BACKGROUND COLOR</label>
+          <input type="text" id="bgColorInput" />
+          <label for="">FONT COLOR</label>
+          <input type="text" id="fontColorInput" />
+          <label for="">FONT SIZE (in px)</label>
+          <input type="text" id="fontSizeInput" />
+          <label for="">FONT WEIGHT</label>
+          <input type="text" id="fontWeightInput" />
+          <label for="">PADDING (in px)</label>
+          <input type="text" id="paddingInput" />
+          <label for="">BORDER RADIUS (in px)</label>
+          <input type="text" id="borderRadiusInput" />
+          <button id="applyButton" class="applyButton">Apply</button>
+          <button id="customButton" class="customButton">Custom Button</button>
+        </div>
+      </div>
+      <hr />
 
-<div class="buttonMakerContainer">
-    <h1>Button Maker</h1>
-    <div class="buttonItemContainer">
-        <label for="">BACKGROUND COLOR</label>
-        <input type="text" id="bgColorInput">
-        <label for="">FONT COLOR</label>
-        <input type="text" id="fontColorInput">
-        <label for="">FONT SIZE (in px)</label>
-        <input type="text" id="fontSizeInput">
-        <label for="">FONT WEIGHT</label>
-        <input type="text" id="fontWeightInput">
-        <label for="">PADDING (in px)</label>
-        <input type="text" id="paddingInput">
-        <label for="">BORDER RADIUS (in px)</label>
-        <input type="text" id="borderRadiusInput">
-        <button id="applyButton" class="applyButton">Apply</button>
-        <button id="customButton" class="customButton">Custom Button</button>
-    </div>
-</div>
+      <!-- Tabs -->
+
+      <div class="tabContainer">
+        <h1>Varanasi</h1>
+        <p class="tabPContainer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+          optio possimus repellat nisi unde quas laborum necessitatibus
+          voluptatibus.
+        </p>
+        <img
+            src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTNwGkMGY81Lb2Nvxan1GRzibR9oWnqS_DgaMQ4RaiKlpOg9UQyK2DN_lwriXojDotOWExjV3rJMobjKQy_V5Q8RQRJpuuN6uf_Pr6BiQ"
+            alt=""
+            width="350px"
+            height="250px"
+          />
+          <div class="tabContainerButtons">
+            <button class="about-Tab" id="aboutButton" onclick="aboutBtn()">About</button>
+            <button class="time-to-visit-Tab" id="timeToVisitButton" onclick="timeToVisitBtn()">Time to Visit</button>
+            <button class="attraction-Tab" id="attractionsButton" onclick="attractionsBtn()">Attractions</button>
+          </div>
+          <p class="buttonTabContent" id="tabsContainer"></p>
+      </div>
     </center>
     <script src="./index.js"></script>
   </body>

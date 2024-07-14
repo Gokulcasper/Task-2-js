@@ -89,7 +89,7 @@ color: darkblue;
 .colorContainer{
     height: 400px;
     width: 400px;
-    background-color: deeppink;
+    background-color: #e75d7c;
 }
 
 /* Button Maker */
@@ -136,4 +136,36 @@ padding: 10px 10px;
     font-size: 20px;
     padding: 5px;
     border-radius: none;
+}
+
+/* Tabs */
+.tabContainer{
+    height: max-content;
+    width: 400px;
+    padding: 20px 10px;
+    background-color: #f1f5f8;
+}
+.tabContainer>h1{
+color: #022241;
+}
+.tabPContainer{
+text-align: center;
+font-size: 16px;
+padding: 10px 20px 20px;
+}
+.tabContainer>img{
+border-radius: 5px;
+}
+.tabContainerButtons{
+    margin-top: 20px;
+}
+.tabContainerButtons>button{
+background-color: #bed2e2;
+border: none;
+font-size: 18px;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.buttonTabContent{
+    
 }
