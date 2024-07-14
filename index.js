@@ -53,30 +53,34 @@ backgroundColorContainer.style.backgroundColor=result;
 
 
 
-
+// 
 
 
 //--------- Tab -------------
-// let tabsContainer = document.querySelector("buttonTabContent");
-// let aboutButton = document.querySelector("about-Tab");
-// let timeToVisitButton = document.querySelector("time-to-visit-Tab");
-// let attractionsButtons = document.querySelector("attraction-Tab");
+let tabsContainer = document.querySelector(".buttonTabContent");
+let aboutButton = document.querySelector(".about-Tab");
+let timeToVisitButton = document.querySelector(".time-to-visit-Tab");
+let attractionsButtons = document.querySelector(".attraction-Tab");
 
-// function aboutBtn(){
-//     tabsContainer.textContent="The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.";
-//     tabsContainer.style.background="white";
-//     tabsContainer.style.padding="10px";
-//     aboutButton.style.backgroundColor="white";
-// }
-// function timeToVisitBtn(){
-//     tabsContainer.textContent="The best time to visit Varanasi is Winter (November - February) since the temperature is low and there is a calm breeze throughout the day. Summers in Varanasi experience high and dry temperatures. It is best to avoid the summers since they are hot dry and sunny making outdoor sightseeing difficult.";
-//     tabsContainer.style.backgroundColor="white";
-//     tabsContainer.style.padding="10px";
-//     aboutButton.style.backgroundColor="white";
-// }
-// function attractionsBtn(){
-//     tabsContainer.textContent="Knowledge, philosophy, culture, devotion to Gods, Indian arts and crafts have all flourished here for centuries. Also a pilgrimage place for Jains, Varanasi is believed to be the birthplace of Parsvanath, the twenty-third Tirthankar. Vaishnavism and Shaivism have co-existed in Varanasi harmoniously.";
-//     tabsContainer.style.background="white";
-//     tabsContainer.style.padding="10px";
-//     aboutButton.style.backgroundColor="white";
-// }
+function aboutBtn(){
+    tabsContainer.textContent="The land of Varanasi (Kashi) has been the ultimate pilgrimage spot for Hindus for ages. Hindus believe that one who is graced to die on the land of Varanasi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Varanasi are yet unknown.";
+    tabsContainer.style.background="white";
+    tabsContainer.style.padding="10px";
+    aboutButton.style.backgroundColor="white";
+    timeToVisitButton.style.backgroundColor="#bed2e2";
+    attractionsButtons.style.backgroundColor="#bed2e2";
+}
+function timeToVisitBtn(){
+    tabsContainer.textContent="The best time to visit Varanasi is Winter (November - February) since the temperature is low and there is a calm breeze throughout the day. Summers in Varanasi experience high and dry temperatures. It is best to avoid the summers since they are hot dry and sunny making outdoor sightseeing difficult.";
+    tabsContainer.style.backgroundColor="white";
+    timeToVisitButton.style.backgroundColor="white";
+    aboutButton.style.backgroundColor="#bed2e2";
+    attractionsButtons.style.backgroundColor="#bed2e2";
+}
+function attractionsBtn(){
+    tabsContainer.textContent="Knowledge, philosophy, culture, devotion to Gods, Indian arts and crafts have all flourished here for centuries. Also a pilgrimage place for Jains, Varanasi is believed to be the birthplace of Parsvanath, the twenty-third Tirthankar. Vaishnavism and Shaivism have co-existed in Varanasi harmoniously.";
+    tabsContainer.style.background="white";
+    attractionsButtons.style.backgroundColor="white";
+        aboutButton.style.backgroundColor="#bed2e2";
+        timeToVisitButton.style.backgroundColor="#bed2e2";
+}
