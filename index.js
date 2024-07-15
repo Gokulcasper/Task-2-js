@@ -29,6 +29,8 @@ function restartButton(){
     firstNumber.textContent=Math.ceil(Math.random()*10);
     secondNumber.textContent=Math.ceil(Math.random()*10);
     userInput.value=" ";
+    gameResult.textContent="";
+    gameResult.style.backgroundColor="#f1f5f8";
 }
 
 // ---------- Change Color --------------
@@ -47,13 +49,59 @@ backgroundColorContainer.style.backgroundColor=result;
 
 // -------------- Button Maker --------------
 
+let bgColorInput = document.getElementById("bgColorInput");
+let fontColorInput = document.getElementById("fontColorInput");
+let fontSizeInput = document.getElementById("fontSizeInput");
+let fontWeightInput = document.getElementById("fontWeightInput");
+let paddingInput = document.getElementById("paddingInput");
+let borderRadiusInput = document.getElementById("borderRadiusInput");
+
+let applyButton = document.getElementById("applyButton");
+let customButton = document.getElementById("customButton");
+
+
+
+function applyBtn(){
+let bgColorInputValue=bgColorInput.value;
+let fontColorInputValue=fontColorInput.value;
+let fontSizeInputValue=fontSizeInput.value;
+let fontWeightInputValue=fontWeightInput.value;
+let paddingInputValue=paddingInput.value;
+let borderRadiusInputValue=borderRadiusInput.value;
+
+console.log(fontColorInputValue)
+
+if(bgColorInputValue)
+{
+    customButton.style.backgroundColor=bgColorInputValue;
+}
+if(fontColorInputValue)
+{
+    customButton.style.color=fontColorInputValue;
+}
+if(fontSizeInputValue)
+{
+    customButton.style.fontSize=fontSizeInputValue + "px";
+}
+if(fontWeightInputValue)
+{
+    customButton.style.fontWeight=fontWeightInputValue;
+}
+if(paddingInputValue)
+{
+    customButton.style.padding=paddingInputValue + "px";
+}
+if(borderRadiusInputValue)
+{
+    customButton.style.borderRadius=borderRadiusInputValue + "px";
+}
+
+
+}
 
 
 
 
-
-
-// 
 
 
 //--------- Tab -------------
