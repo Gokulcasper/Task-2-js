@@ -33,6 +33,12 @@ function restartButton(){
     gameResult.style.backgroundColor="#f1f5f8";
 }
 
+function normalGameBtn(){
+    userInput.value="";
+    gameResult.textContent="";
+    gameResult.style.backgroundColor="#f1f5f8";
+}
+
 // ---------- Change Color --------------
 let backgroundColorContainer = document.getElementById("bgContainer");
 let colorButton = document.getElementById("buttonChangeColor");
@@ -95,13 +101,23 @@ if(borderRadiusInputValue)
 {
     customButton.style.borderRadius=borderRadiusInputValue + "px";
 }
-
-
 }
 
+function normalBtnMaker(){
+bgColorInput.value="";
+fontColorInput.value="";
+fontSizeInput.value="";
+fontWeightInput.value="";
+paddingInput.value="";
+borderRadiusInput.value="";
 
-
-
+customButton.style.backgroundColor="";
+customButton.style.color="";
+customButton.style.fontSize="";
+customButton.style.fontWeight="";
+customButton.style.padding="";
+customButton.style.borderRadius="";
+}
 
 
 //--------- Tab -------------

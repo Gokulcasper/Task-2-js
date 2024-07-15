@@ -66,6 +66,14 @@ background-color:#f1f5f8;
 padding: 10px;
 color: darkblue;
 }
+.normalGameBtn{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border: .5px solid white;
+    background-color: #9a9ca6;
+}
+
 
 /* Change Color */
 
@@ -139,6 +147,13 @@ padding: 10px 10px;
     padding: 5px;
 margin-left: 80px;
 margin-top: 10px;
+}
+.normalBtnMaker{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border: .5px solid white;
+    background-color: #9a9ca6;
 }
 
 /* Tabs */
